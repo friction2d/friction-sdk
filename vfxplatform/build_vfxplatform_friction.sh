@@ -23,7 +23,7 @@ source /opt/rh/llvm-toolset-7.0/enable
 clang -v
 
 SDK=${SDK:-"/opt/friction"}
-BUILD=${BUILD:-"${HOME}"}
+BUILD=${BUILD:-"${HOME}/friction-sdk/vfxplatform"}
 
 BUILD_ENGINE=${BUILD_ENGINE:-"ON"}
 REL=${REL:-1}

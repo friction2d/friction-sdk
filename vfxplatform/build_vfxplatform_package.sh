@@ -21,7 +21,7 @@ set -e -x
 
 SDK=${SDK:-"/opt/friction"}
 DISTFILES=${DISTFILES:-"/mnt"}
-BUILD=${BUILD:-"${HOME}"}
+BUILD=${BUILD:-"${HOME}/friction-sdk/vfxplatform"}
 VERSION=${VERSION:-""}
 APPID="graphics.friction.Friction"
 FRICTION_PKG=friction-${VERSION}

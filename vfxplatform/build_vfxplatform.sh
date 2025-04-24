@@ -21,7 +21,7 @@ set -e -x
 
 SDK=${SDK:-"/opt/friction"}
 DISTFILES=${DISTFILES:-"/mnt"}
-BUILD=${BUILD:-"${HOME}"}
+BUILD=${BUILD:-"${HOME}/friction-sdk/vfxplatform"}
 
 REL=${REL:-1}
 BRANCH=${BRANCH:-""}

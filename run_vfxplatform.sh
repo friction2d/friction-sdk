@@ -48,7 +48,7 @@ if [ ! -d "${CWD}/distfiles/sdk" ]; then
 fi
 
 if [ "${LOCAL_BUILD}" = 1 ]; then
-    (cd vfxplatform; docker build -t friction-vfxplatform -f Dockerfile.vfxplatform .)
+    (cd vfxplatform; docker build -t friction-vfxplatform .)
     ${DOCKER} friction-vfxplatform
 else
     docker pull frictiongraphics/friction-vfxplatform-sdk
