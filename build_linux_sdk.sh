@@ -20,12 +20,9 @@
 set -e -x
 
 CWD=`pwd`
+MKJOBS=${MKJOBS:-4}
 
-COMMIT=`git rev-parse --short=8 HEAD`
-BRANCH=`git rev-parse --abbrev-ref HEAD`
-
-LOCAL_BUILD=0 \
-CUSTOM=CI \
-BRANCH=${BRANCH} \
-COMMIT=${COMMIT} \
+MKJOBS=${MKJOBS} \
+ONLY_SDK=1 \
+DOWNLOAD_SDK=0 \
 ./build_linux.sh
