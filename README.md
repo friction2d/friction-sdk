@@ -4,7 +4,7 @@ Friction SDK used to build and maintain binaries for supported platforms.
 
 ## Linux
 
-Use `build_linux.sh`.
+Run `build_linux.sh`.
 
 ### Requirements
 
@@ -27,3 +27,20 @@ Use `build_linux.sh`.
   * Run local built docker container
 * `DOWNLOAD_SDK` = `0`/`1` *(default is `1`)*
   * Use a prebuilt SDK
+
+## FFmpeg for Windows
+
+FFmpeg for Windows is built using MXE on Linux or macOS using the MinGW toolchain (this is the only component that uses MinGW, the rest is MSVC).
+
+### Requirements
+
+* Linux/macOS
+* https://mxe.cc/#requirements
+
+### Build
+
+```
+git clone https://github.com/friction2d/mxe
+cd mxe
+../build_mxe_ffmpeg.sh
+```
